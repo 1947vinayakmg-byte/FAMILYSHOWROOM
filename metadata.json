@@ -1,0 +1,8 @@
+{
+  "name": "DEMOFamily Showroom",
+  "description": "A premium luxury family showroom ecommerce experience with high-end bridal wear, designer collections, wedding attire, and seasonal curation.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

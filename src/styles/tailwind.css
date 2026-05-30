@@ -1,0 +1,8 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Cormorant Garamond", "Playfair Display", Georgia, serif;
+  --font-sans: "Plus Jakarta Sans", "Montserrat", system-ui, sans-serif;
+  --font-display: "Marcellus", "Cinzel", serif;
+  --font-script: "Pinyon Script", cursive;
+}
