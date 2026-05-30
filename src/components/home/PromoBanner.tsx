@@ -9,7 +9,7 @@ export default function PromoBanner() {
     <>
       <section className="relative w-full max-w-7xl mx-auto px-6 md:px-12 py-10 select-none overflow-hidden pb-4">
         {/* Container with golden luxury styling and abstract backdrop */}
-        <div className="relative rounded-3xl overflow-hidden border border-[#D4AF37]/30 shadow-2xl bg-black min-h-[420px] md:min-h-[520px] flex items-end p-8 md:p-12">
+        <div className="relative rounded-3xl overflow-hidden border border-[#D4AF37]/30 shadow-2xl bg-black min-h-[220px] sm:min-h-[350px] md:min-h-[520px] flex items-end p-5 sm:p-8 md:p-12">
           
           {/* Glamorous ambient light background overlays - Now clear and full opacity */}
           <div className="absolute inset-0 bg-cover bg-center pointer-events-none transition-transform duration-[10s] hover:scale-105"
@@ -17,12 +17,12 @@ export default function PromoBanner() {
           />
           
           {/* Ambient radial glow/shadow just at the bottom to give contrast to the button */}
-          <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent z-10 pointer-events-none" />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent z-10 pointer-events-none" />
 
           {/* Call to action button positioned at the bottom left corner */}
           <Link
             to="/collection"
-            className="relative z-20 w-full sm:w-auto px-8 py-4 bg-white hover:bg-[#D4AF37] text-black hover:text-black rounded-xl text-center text-[10px] md:text-xs uppercase tracking-[0.25em] font-sans font-bold transition-all duration-300 shadow-lg hover:shadow-2xl flex items-center justify-center gap-2 transform active:scale-95 border border-white hover:border-[#D4AF37]"
+            className="relative z-20 w-full sm:w-auto px-5 py-3 sm:px-8 sm:py-4 bg-white hover:bg-[#D4AF37] text-black hover:text-black rounded-xl text-center text-[9px] sm:text-[10px] md:text-xs uppercase tracking-[0.25em] font-sans font-bold transition-all duration-300 shadow-lg hover:shadow-2xl flex items-center justify-center gap-2 transform active:scale-95 border border-white hover:border-[#D4AF37]"
           >
             UNLOCK COUTURE COLLECTION <ArrowRight className="w-3.5 h-3.5" />
           </Link>

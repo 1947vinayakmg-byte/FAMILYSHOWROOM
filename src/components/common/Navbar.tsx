@@ -159,6 +159,39 @@ export default function Navbar() {
           </div>
         </div>
 
+        {/* Mobile Category Navigation Bar - Horizontal Scroll (visible only on mobile) */}
+        <div className="lg:hidden flex items-center justify-start gap-4 overflow-x-auto whitespace-nowrap px-4 py-2.5 bg-[#FAF7F2] border-t border-gray-100 no-scrollbar" id="mobile-category-bar">
+          <style>{`
+            #mobile-category-bar::-webkit-scrollbar {
+              display: none;
+            }
+            #mobile-category-bar {
+              -ms-overflow-style: none;
+              scrollbar-width: none;
+            }
+          `}</style>
+          {[
+            { label: 'MEN', path: '/men' },
+            { label: 'WOMEN', path: '/women' },
+            { label: 'KIDS', path: '/kids' },
+            { label: 'SHERWANIS', path: '/sherwanis' },
+            { label: 'BRIDAL LEHENGAS', path: '/bridal-lehengas' }
+          ].map((item) => (
+            <NavLink
+              key={item.label}
+              to={item.path}
+              className={({ isActive }) =>
+                `text-[9px] font-sans font-bold uppercase tracking-[0.18em] transition-all hover:text-[#D4AF37] cursor-pointer py-1 px-2 shrink-0 ${isActive
+                  ? 'text-[#D4AF37] border-b-2 border-[#D4AF37]'
+                  : 'text-gray-800'
+                }`
+              }
+            >
+              {item.label}
+            </NavLink>
+          ))}
+        </div>
+
         {/* Search overlays */}
         {isSearchOpen && (
           <SearchBar

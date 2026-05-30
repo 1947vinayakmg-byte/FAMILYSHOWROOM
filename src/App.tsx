@@ -43,9 +43,7 @@ function ScrollToTop() {
 
 export default function App() {
   const [initLoader, setInitLoader] = useState(true);
-  const [hasEntered, setHasEntered] = useState(() => {
-    return sessionStorage.getItem('atelier_welcome_entered') === 'true';
-  });
+  const [hasEntered, setHasEntered] = useState(true);
 
   const handleEnterBoutique = () => {
     setHasEntered(true);
