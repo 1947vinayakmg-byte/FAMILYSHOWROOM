@@ -6,11 +6,12 @@ import bridalLehengaHero from '../../assets/banners/lehenga.jpg';
 export default function BridalLehengas() {
   const { products } = useShop();
 
-  // Filter for Bridal Lehengas or products containing "lehenga"
+  // Filter for Bridal Lehengas or products containing "lehenga" (excluding kids)
   const lehengaProducts = products.filter(
     (p) =>
-      p.subcategory.toLowerCase().includes('lehenga') ||
-      p.name.toLowerCase().includes('lehenga')
+      p.category !== 'kids' &&
+      (p.subcategory.toLowerCase().includes('lehenga') ||
+       p.name.toLowerCase().includes('lehenga'))
   );
 
   return (

@@ -37,7 +37,8 @@ export default function PromoBanner() {
             100% { transform: translate3d(-50%, 0, 0); }
           }
           .animate-marquee-loop {
-            animation: marquee 28s linear infinite;
+            animation: marquee 16s linear infinite;
+            will-change: transform;
           }
           @keyframes spin-slow {
             0% { transform: rotate(0deg); }

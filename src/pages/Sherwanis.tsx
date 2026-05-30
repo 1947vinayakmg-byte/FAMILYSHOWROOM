@@ -6,11 +6,12 @@ import sherwaniHero from '../../assets/banners/sherwani.jpg';
 export default function Sherwanis() {
   const { products } = useShop();
 
-  // Filter for Groom Sherwanis or products containing "sherwani"
+  // Filter for Groom Sherwanis or products containing "sherwani" (excluding kids)
   const sherwaniProducts = products.filter(
     (p) =>
-      p.subcategory.toLowerCase().includes('sherwani') ||
-      p.name.toLowerCase().includes('sherwani')
+      p.category !== 'kids' &&
+      (p.subcategory.toLowerCase().includes('sherwani') ||
+       p.name.toLowerCase().includes('sherwani'))
   );
 
   return (
